@@ -1,0 +1,26 @@
+header {
+  width: 800px;
+  margin: 10px auto;
+  @include query($small-desktop) {
+    width: 700px;
+  }
+  @include query($tablets) {
+    width: 460px;
+  }
+  @include query($mobile) {
+    width: 310px;
+  }
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a img {
+      width: 40px;
+    }
+  }
+}
