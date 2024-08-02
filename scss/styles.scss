@@ -6,33 +6,3 @@
 @import "footer";
 @import "contact";
 @import "about";
-
-// DEFAULT
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: $default;
-  scroll-behavior: smooth;
-  overflow-x: hidden;
-}
-
-body {
-  font-family: "Inter", sans-serif;
-  line-height: 1;
-  font-weight: 400;
-  background-color: $light-background;
-  color: $dark-text;
-  overflow-x: hidden;
-}
-
-a {
-  text-decoration: none;
-}
-
-.site {
-  margin: 15px auto;
-}
