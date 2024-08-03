@@ -1,5 +1,6 @@
 .hero {
   margin-top: 25rem;
+  margin-bottom: 25rem;
   padding: 10px 15px;
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -48,13 +49,13 @@
   font-size: 1.7rem;
 }
 .hero .hero-texts .hero-buttons .first-hero-button:hover {
-  background-color: rgb(241, 241, 241);
+  background-color: #f1f1f1;
   border: 1px solid #ced4da;
   color: #212529;
 }
 .hero .hero-texts .hero-buttons .second-hero-button {
   color: #212529;
-  background-color: rgb(241, 241, 241);
+  background-color: #f1f1f1;
   border: 1px solid #ced4da;
 }
 .hero .hero-texts .hero-buttons .second-hero-button:hover {
@@ -86,6 +87,7 @@
   .hero {
     grid-template-columns: 1fr;
     margin-top: 10rem;
+    margin-bottom: 10rem;
     justify-items: center;
     text-align: center;
     gap: 5rem;
@@ -104,6 +106,7 @@
 @media (max-width: 768px) {
   .hero {
     margin-top: 5rem;
+    margin-bottom: 5rem;
   }
   .hero img {
     width: 350px;
@@ -131,6 +134,7 @@
   .hero {
     gap: 3rem !important;
     margin-top: 2rem;
+    margin-bottom: 2rem;
   }
   .hero img {
     width: 280px;
@@ -218,7 +222,7 @@ header nav ul button {
   transition: all 400ms;
 }
 header nav ul button:hover {
-  background-color: rgb(241, 241, 241);
+  background-color: #f1f1f1;
   color: #212529;
   border: 1px solid #ced4da;
 }
@@ -287,7 +291,7 @@ html {
 }
 
 body {
-  background-color: rgb(241, 241, 241);
+  background-color: #f1f1f1;
   overflow-x: hidden;
 }
 
