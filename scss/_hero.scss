@@ -1,0 +1,165 @@
+.hero {
+  margin-top: 25rem;
+  padding: 10px 15px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-items: end;
+
+  img {
+    width: 450px;
+    border-radius: 20px;
+  }
+
+  .hero-texts {
+    padding-top: 8rem;
+
+    h2 {
+      font-size: 3.5rem;
+      letter-spacing: 1px;
+      font-weight: 400;
+      color: $extreme-dark-text;
+    }
+    p {
+      margin-top: 2rem;
+      font-size: 1.5rem;
+      color: $light-dark-text;
+    }
+
+    .hero-buttons {
+      margin-top: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 5px;
+
+      a {
+        padding: 7px 20px;
+        color: $extreme-dark-text;
+        background-color: $extreme-dark-background;
+        color: $light-text;
+        font-size: 1.5rem;
+        letter-spacing: 0.5px;
+        border-radius: 10px;
+        border: 1px solid transparent;
+        transition: all 400ms;
+        display: flex;
+        align-items: center;
+        gap: 3px;
+
+        i {
+          font-size: 1.7rem;
+        }
+      }
+      .first-hero-button {
+        &:hover {
+          background-color: $light-background;
+          border: 1px solid $border;
+          color: $extreme-dark-text;
+        }
+      }
+
+      .second-hero-button {
+        color: $extreme-dark-text;
+        background-color: $light-background;
+        border: 1px solid $border;
+        &:hover {
+          background-color: $extreme-dark-background;
+          border: 1px solid transparent;
+          color: $light-text;
+        }
+      }
+    }
+
+    .hero-social {
+      margin-top: 8rem;
+      padding-left: 1rem;
+      p {
+        font-size: 1.5rem;
+        color: $light-dark-text;
+      }
+      ul {
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-left: 0.5rem;
+        gap: 10px;
+        i {
+          font-size: 2rem;
+          color: $extreme-dark-text;
+        }
+      }
+    }
+  }
+  @include query($desktop) {
+    grid-template-columns: 1fr;
+    margin-top: 10rem;
+    justify-items: center;
+    text-align: center;
+    gap: 5rem;
+    .hero-buttons {
+      justify-content: center !important;
+    }
+
+    .hero-social {
+      margin-top: 3rem !important;
+      ul {
+        justify-content: center !important;
+        margin-left: 0;
+      }
+    }
+  }
+
+  @include query($tablets) {
+    margin-top: 5rem;
+
+    img {
+      width: 350px;
+    }
+
+    .hero-texts {
+      padding-top: 5rem !important;
+      h2 {
+        font-size: 2.5rem !important;
+      }
+      p {
+        font-size: 1rem !important;
+      }
+    }
+
+    .hero-buttons {
+      margin-top: 1rem !important;
+      a {
+        font-size: 1rem !important;
+        i {
+          font-size: 1.4rem !important;
+        }
+      }
+    }
+  }
+
+  @include query($mobile) {
+    gap: 3rem !important;
+    margin-top: 2rem;
+    img {
+      width: 280px;
+    }
+    .hero-texts {
+      padding-top: 3rem !important;
+      h2 {
+        font-size: 2rem !important;
+      }
+      p {
+        font-size: 0.8rem !important;
+      }
+
+      .hero-social {
+        ul {
+          i {
+            font-size: 1.5rem !important;
+          }
+        }
+      }
+    }
+  }
+}

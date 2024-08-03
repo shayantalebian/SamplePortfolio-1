@@ -1,3 +1,154 @@
+.hero {
+  margin-top: 25rem;
+  padding: 10px 15px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-items: end;
+}
+.hero img {
+  width: 450px;
+  border-radius: 20px;
+}
+.hero .hero-texts {
+  padding-top: 8rem;
+}
+.hero .hero-texts h2 {
+  font-size: 3.5rem;
+  letter-spacing: 1px;
+  font-weight: 400;
+  color: #212529;
+}
+.hero .hero-texts p {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  color: #606060;
+}
+.hero .hero-texts .hero-buttons {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+}
+.hero .hero-texts .hero-buttons a {
+  padding: 7px 20px;
+  color: #212529;
+  background-color: #212529;
+  color: #f8f9fa;
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  transition: all 400ms;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.hero .hero-texts .hero-buttons a i {
+  font-size: 1.7rem;
+}
+.hero .hero-texts .hero-buttons .first-hero-button:hover {
+  background-color: rgb(241, 241, 241);
+  border: 1px solid #ced4da;
+  color: #212529;
+}
+.hero .hero-texts .hero-buttons .second-hero-button {
+  color: #212529;
+  background-color: rgb(241, 241, 241);
+  border: 1px solid #ced4da;
+}
+.hero .hero-texts .hero-buttons .second-hero-button:hover {
+  background-color: #212529;
+  border: 1px solid transparent;
+  color: #f8f9fa;
+}
+.hero .hero-texts .hero-social {
+  margin-top: 8rem;
+  padding-left: 1rem;
+}
+.hero .hero-texts .hero-social p {
+  font-size: 1.5rem;
+  color: #606060;
+}
+.hero .hero-texts .hero-social ul {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 0.5rem;
+  gap: 10px;
+}
+.hero .hero-texts .hero-social ul i {
+  font-size: 2rem;
+  color: #212529;
+}
+@media (max-width: 1200px) {
+  .hero {
+    grid-template-columns: 1fr;
+    margin-top: 10rem;
+    justify-items: center;
+    text-align: center;
+    gap: 5rem;
+  }
+  .hero .hero-buttons {
+    justify-content: center !important;
+  }
+  .hero .hero-social {
+    margin-top: 3rem !important;
+  }
+  .hero .hero-social ul {
+    justify-content: center !important;
+    margin-left: 0;
+  }
+}
+@media (max-width: 768px) {
+  .hero {
+    margin-top: 5rem;
+  }
+  .hero img {
+    width: 350px;
+  }
+  .hero .hero-texts {
+    padding-top: 5rem !important;
+  }
+  .hero .hero-texts h2 {
+    font-size: 2.5rem !important;
+  }
+  .hero .hero-texts p {
+    font-size: 1rem !important;
+  }
+  .hero .hero-buttons {
+    margin-top: 1rem !important;
+  }
+  .hero .hero-buttons a {
+    font-size: 1rem !important;
+  }
+  .hero .hero-buttons a i {
+    font-size: 1.4rem !important;
+  }
+}
+@media (max-width: 480px) {
+  .hero {
+    gap: 3rem !important;
+    margin-top: 2rem;
+  }
+  .hero img {
+    width: 280px;
+  }
+  .hero .hero-texts {
+    padding-top: 3rem !important;
+  }
+  .hero .hero-texts h2 {
+    font-size: 2rem !important;
+  }
+  .hero .hero-texts p {
+    font-size: 0.8rem !important;
+  }
+  .hero .hero-texts .hero-social ul i {
+    font-size: 1.5rem !important;
+  }
+}
+
 header {
   width: 700px;
   margin: 15px auto;
@@ -104,7 +255,7 @@ header nav ul button:hover {
   right: 0;
   width: 100%;
   height: 100vh;
-  background-color: rgba(241, 241, 241, 0.8);
+  background-color: rgba(241, 241, 241, 0.92);
   z-index: 100;
   display: flex;
   align-items: center;
@@ -170,7 +321,7 @@ li {
 }
 @media (max-width: 480px) {
   .main-content {
-    width: 320px;
+    width: 380px;
   }
 }
 
