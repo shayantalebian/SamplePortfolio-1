@@ -17,11 +17,20 @@ html {
   font-size: $default;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  font-family: "Inter", sans-serif;
 }
 
 body {
   background-color: $light-background;
   overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
 }
 
 .main-content {
