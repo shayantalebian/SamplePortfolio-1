@@ -1,0 +1,22 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background-color: $extreme-dark-background;
+  margin: 0 1rem;
+  width: 100%;
+  padding: 2.5rem 1.5rem;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  a {
+    color: $light-dark-text;
+    font-size: 1.2rem;
+  }
+
+  @include query($mobile) {
+    a {
+      font-size: 1rem !important;
+    }
+  }
+}

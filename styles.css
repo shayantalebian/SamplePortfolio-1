@@ -429,6 +429,28 @@ header nav ul button:hover {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1), -3px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background-color: #1f1f1f;
+  margin: 0 1rem;
+  width: 100%;
+  padding: 2.5rem 1.5rem;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+}
+.footer a {
+  color: #606060;
+  font-size: 1.2rem;
+}
+@media (max-width: 480px) {
+  .footer a {
+    font-size: 1rem !important;
+  }
+}
+
 .contact {
   width: 100%;
   background-color: #e9ecef;
