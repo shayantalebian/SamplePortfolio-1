@@ -1,5 +1,6 @@
 const menu = document.querySelector(".menu");
 const close = document.querySelector(".close");
+const header = document.querySelector(".header");
 const nav = document.querySelector(".nav");
 menu.addEventListener("click", function () {
   nav.classList.toggle("r-nav");
@@ -32,4 +33,12 @@ li5.addEventListener("click", function () {
 });
 li6.addEventListener("click", function () {
   nav.classList.remove("r-nav");
+});
+
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 0) {
+    header.classList.add("shadow");
+  } else {
+    header.classList.remove("shadow");
+  }
 });

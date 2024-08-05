@@ -1,14 +1,21 @@
 header {
   width: 700px;
   margin: 15px auto;
+  position: fixed;
+  top: 3.5rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   flex-direction: row;
   align-items: center;
+  background-color: $light-background;
   justify-content: space-between;
   padding: 10px 15px;
   border: 1px solid $border;
   border-radius: 15px;
   z-index: 1;
+  transition: all 400ms;
+
   .close {
     display: none;
   }
@@ -118,4 +125,8 @@ header {
     right: 10px;
     font-size: 3.5rem;
   }
+}
+
+.shadow {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1), -3px 5px 5px rgba(0, 0, 0, 0.1);
 }

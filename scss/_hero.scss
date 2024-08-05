@@ -1,5 +1,5 @@
 .hero {
-  margin-top: 25rem;
+  margin-top: 35rem;
   margin-bottom: 25rem;
   padding: 10px 15px;
   display: grid;
@@ -94,7 +94,7 @@
   }
   @include query($desktop) {
     grid-template-columns: 1fr;
-    margin-top: 10rem;
+    margin-top: 15rem;
     margin-bottom: 10rem;
     justify-items: center;
     text-align: center;
@@ -113,7 +113,7 @@
   }
 
   @include query($tablets) {
-    margin-top: 5rem;
+    margin-top: 10rem;
     margin-bottom: 5rem;
 
     img {
@@ -143,7 +143,7 @@
 
   @include query($mobile) {
     gap: 3rem !important;
-    margin-top: 2rem;
+    margin-top: 10rem;
     margin-bottom: 2rem;
     img {
       width: 280px;
