@@ -39,6 +39,13 @@
   display: block;
   background-color: #f1f1f1;
   color: #212529;
+  transition: all 400ms;
+  border: 1px solid transparent;
+}
+.projects .projects-black .projects-explore-btn:hover {
+  background-color: transparent;
+  color: #f8f9fa;
+  border: 1px solid #343a40;
 }
 .projects .projects-black .projects-explore-btn span {
   font-weight: 500;
