@@ -96,6 +96,7 @@ header {
     }
   }
   @include query($mobile) {
+    margin: 7px auto 15px;
     width: 310px;
   }
   @include query($small-mobile) {

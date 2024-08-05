@@ -391,6 +391,7 @@ header nav ul button:hover {
 }
 @media (max-width: 480px) {
   header {
+    margin: 7px auto 15px;
     width: 310px;
   }
 }
