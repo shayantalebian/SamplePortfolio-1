@@ -49,6 +49,11 @@
       }
     }
   }
+  @media (max-width: 400px) {
+    h2 {
+      font-size: 1.4rem !important;
+    }
+  }
 
   .about-grid {
     margin-top: 3rem;
