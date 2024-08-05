@@ -47,6 +47,6 @@ li {
     width: 480px;
   }
   @include query($mobile) {
-    width: 380px;
+    width: 330px;
   }
 }

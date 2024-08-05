@@ -429,6 +429,103 @@ header nav ul button:hover {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1), -3px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
+.contact {
+  width: 100%;
+  background-color: #e9ecef;
+  margin: 0 1rem 0;
+  padding: 5rem 8rem 5rem;
+}
+.contact h2 {
+  color: #212529;
+  font-size: 3rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-bottom: 3rem;
+}
+.contact .contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+.contact .contact-grid .contact-item-1 {
+  border-top-left-radius: 9px;
+  border-bottom-left-radius: 9px;
+}
+.contact .contact-grid .contact-item-2 {
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 9px;
+}
+.contact .contact-grid .contact-grid-item {
+  padding: 2.5rem 2rem 3rem;
+  width: 100%;
+  background-color: #f1f1f1;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1), -5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+.contact .contact-grid .contact-grid-item h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+.contact .contact-grid .contact-grid-item p {
+  font-size: 1.2rem;
+  color: #606060;
+  margin-bottom: 2.5rem;
+}
+.contact .contact-grid .contact-grid-item a {
+  padding: 0.7rem 1.7rem;
+  font-size: 1.2rem;
+  color: #f8f9fa;
+  background-color: #262626;
+  border-radius: 7px;
+  transition: all 400ms;
+  border: 1px solid transparent;
+}
+.contact .contact-grid .contact-grid-item a:hover {
+  border: 1px solid #343a40;
+  background-color: transparent;
+  color: #212529;
+}
+@media (max-width: 768px) {
+  .contact {
+    padding: 4rem 6rem 5rem;
+  }
+  .contact h2 {
+    font-size: 2.5rem;
+  }
+  .contact .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 3px;
+  }
+  .contact .contact-grid .contact-item-1 {
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    border-bottom-left-radius: 0px;
+  }
+  .contact .contact-grid .contact-item-2 {
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+    border-top-right-radius: 0px;
+  }
+}
+@media (max-width: 480px) {
+  .contact {
+    padding: 3rem 5rem 4rem;
+  }
+  .contact h2 {
+    font-size: 2.2rem;
+  }
+  .contact .contact-grid h3 {
+    font-size: 1.5rem !important;
+  }
+  .contact .contact-grid p {
+    font-size: 1rem !important;
+  }
+  .contact .contact-grid a {
+    padding: 0.6rem 1.5rem !important;
+    font-size: 1rem !important;
+  }
+}
+
 .about {
   width: 100%;
   text-align: center;
@@ -469,6 +566,11 @@ header nav ul button:hover {
   }
   .about .about-item p {
     font-size: 1rem !important;
+  }
+}
+@media (max-width: 400px) {
+  .about h2 {
+    font-size: 1.4rem !important;
   }
 }
 .about .about-grid {
@@ -566,7 +668,7 @@ li {
 }
 @media (max-width: 480px) {
   .main-content {
-    width: 380px;
+    width: 330px;
   }
 }
 
