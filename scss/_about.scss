@@ -1,0 +1,101 @@
+.about {
+  width: 100%;
+  text-align: center;
+  background-color: $about-background;
+  margin: 5rem 1rem;
+  padding: 4rem 5px;
+
+  .about-heading {
+    font-size: 1.5rem;
+    background-color: $light-background;
+    color: $light-dark-text;
+    padding: 1rem 1.5rem;
+    border-radius: 15px;
+  }
+
+  h2 {
+    font-size: 2rem;
+    color: $extreme-dark-text;
+    font-weight: 500;
+    margin-top: 2.5rem;
+  }
+
+  @include query($tablets) {
+    .about-heading {
+      font-size: 1.3rem;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+    }
+  }
+
+  @include query($mobile) {
+    .about-heading {
+      font-size: 1.2rem !important;
+    }
+
+    h2 {
+      font-size: 1.5rem !important;
+    }
+
+    .about-item {
+      a {
+        font-size: 1.5rem !important;
+      }
+
+      p {
+        font-size: 1rem !important;
+      }
+    }
+  }
+
+  .about-grid {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    width: 100%;
+    padding: 0 5rem;
+    justify-items: center;
+
+    .about-item {
+      background-color: $light-background;
+      text-align: start;
+      padding: 2rem;
+      border-radius: 15px;
+      transition: all 400ms;
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+      img {
+        width: 100%;
+        border-radius: 15px;
+      }
+
+      a {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        font-size: 2rem;
+        color: $extreme-dark-text;
+        display: block;
+      }
+
+      p {
+        font-size: 1.3rem;
+        color: $light-dark-text;
+      }
+
+      &:hover {
+        scale: 1.03;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+      }
+    }
+
+    @include query($small-desktop) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include query($tablets) {
+      grid-template-columns: 1fr;
+    }
+  }
+}
